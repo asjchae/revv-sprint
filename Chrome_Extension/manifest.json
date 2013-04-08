@@ -1,0 +1,30 @@
+{
+	"name": "Take5",
+	"version": "0.1",
+	"manifest_version" : 2,
+	"description": "OlinJS Revv Sprint Project",
+	"permissions": ["tabs", "contextMenus", "http://*/"],
+	"omnibox": { "keyword" : "revv" },
+	"background" : {
+		"page" : "background.html"
+	},
+
+	"browser_action":
+	{
+		"default_icon": "icons/24.png",
+    	"default_popup": "fragments/popup.html"
+	},
+
+	"content_scripts": [
+	{
+		"matches": ["http://*/*"],
+		"js": ["lib/jquery-1.8.3.min.js","scripts/main.js"],
+		"run_at": "document_idle"
+	}
+	],
+	"icons": {
+		"24": "icons/24.png",
+		"128": "icons/128.png"
+	},
+	"options_page" : "fancy-settings/source/index.html"
+}
