@@ -3,7 +3,7 @@
 	"version": "0.1",
 	"manifest_version" : 2,
 	"description": "OlinJS Revv Sprint Project",
-	"permissions": ["tabs", "contextMenus"],
+	"permissions": ["tabs", "contextMenus", "http://*/"],
 	"omnibox": { "keyword" : "revv" },
 	"background" : {
 		"page" : "background.html"
