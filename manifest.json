@@ -1,10 +1,10 @@
 {
-	"name": "Recall",
+	"name": "Take5",
 	"version": "0.1",
 	"manifest_version" : 2,
-	"description": "Social media search at your fingertips.",
+	"description": "OlinJS Revv Sprint Project",
 	"permissions": ["tabs", "contextMenus"],
-	"omnibox": { "keyword" : "recall" },
+	"omnibox": { "keyword" : "revv" },
 	"background" : {
 		"page" : "background.html"
 	},
