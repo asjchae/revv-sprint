@@ -8,7 +8,7 @@
 	"background" : {
 		"page" : "background.html"
 	},
-
+	"key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDsDApubb73tPfYlNIFxDu3K3/EHgV6/YOJXJkld1OZ20jW/cOht1j0NggnXhQYuu1mXFUufud4I2N7b5ydyg09gcM9Va3Zk17RhNV9smbPHOd4XlzJeXifX/9MgHPu4FzCen3CiSXsOeAELJIXEuT28xICriuUko/rNPwGeIB9VwIDAQAB",
 	"browser_action":
 	{
 		"default_icon": "icons/24.png",
@@ -18,7 +18,7 @@
 	"content_scripts": [
 	{
 		"matches": ["http://*/*"],
-		"js": ["lib/jquery-1.8.3.min.js","scripts/main.js"],
+		"js": ["lib/jquery-1.8.3.min.js","scripts/main.js", "scripts/jquery.blockUI.js"],
 		"run_at": "document_idle"
 	}
 	],
