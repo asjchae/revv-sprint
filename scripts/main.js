@@ -15,6 +15,10 @@ chrome.extension.sendMessage({}, function(response) {
 	}, 10);
 });
 
+
 $(document).ready(function(){
-    console.log("Document is ready...");
+    console.log("Sent from main.js via jquery");
+    // $('body').prepend("<div id='screen' style='position: relative; left: 0; top: 0; background: #000; z-index: 2147483647 !important;'></div>")
+    // $('#screen').css({ opacity: 0.7, 'width':$(document).width(),'height':$(document).height()});
+    // $('*').css({'overflow':'hidden'});
 });
